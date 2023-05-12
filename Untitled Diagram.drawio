@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-12T13:34:54.075Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="QwGifJrACWPpaM21hxVA" version="21.1.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-12T17:04:22.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="BjzOw8EPj-ChmS3NzVgU" version="21.1.9" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2035" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2924" dy="2216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -314,12 +314,14 @@
         <mxCell id="QXRDdDJVpAIqtoCWkeBa-141" value="IP adresa" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="70" y="495" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="rP_uZQigtl_s-wHD9pQy-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rP_uZQigtl_s-wHD9pQy-1" target="rP_uZQigtl_s-wHD9pQy-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rP_uZQigtl_s-wHD9pQy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rP_uZQigtl_s-wHD9pQy-1" target="rP_uZQigtl_s-wHD9pQy-8" edge="1">
+        <mxCell id="rP_uZQigtl_s-wHD9pQy-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rP_uZQigtl_s-wHD9pQy-1" target="iECm1gw3qbrOYEyMOZbv-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="900" y="130" as="targetPoint" />
+            <mxPoint x="1045" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rP_uZQigtl_s-wHD9pQy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="rP_uZQigtl_s-wHD9pQy-1" target="iECm1gw3qbrOYEyMOZbv-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="895" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rP_uZQigtl_s-wHD9pQy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="rP_uZQigtl_s-wHD9pQy-1" target="rP_uZQigtl_s-wHD9pQy-9" edge="1">
@@ -332,12 +334,6 @@
         </mxCell>
         <mxCell id="rP_uZQigtl_s-wHD9pQy-1" value="IS-A" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="900" y="180" width="90" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="rP_uZQigtl_s-wHD9pQy-5" value="mis" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="990" y="100" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="rP_uZQigtl_s-wHD9pQy-8" value="tastatura" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="840" y="100" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rP_uZQigtl_s-wHD9pQy-9" value="komanda" style="whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="895" y="270" width="100" height="40" as="geometry" />
@@ -372,8 +368,14 @@
         <mxCell id="rP_uZQigtl_s-wHD9pQy-18" value="Transakcije" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="170" width="350" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="eZrN_Ac_iOIGgZqlXht0-1" value="ima" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="eZrN_Ac_iOIGgZqlXht0-1" value="ima" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="900" y="735" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iECm1gw3qbrOYEyMOZbv-1" value="mis" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="810" y="85" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iECm1gw3qbrOYEyMOZbv-2" value="tastatura" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="990" y="85" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
