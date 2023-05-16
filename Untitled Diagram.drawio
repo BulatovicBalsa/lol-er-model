@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-16T18:56:57.855Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="BFZ8ZlyelHj0xb8auRpz" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-16T18:58:53.123Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="zkF03WM7Cj_ax9OlWQ8k" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2280" dy="1870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2924" dy="2216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -950,9 +950,6 @@
         <mxCell id="2M90Gd991hqFJUde-eGh-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="2M90Gd991hqFJUde-eGh-239" target="2M90Gd991hqFJUde-eGh-240" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2M90Gd991hqFJUde-eGh-237" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="2M90Gd991hqFJUde-eGh-239" target="2M90Gd991hqFJUde-eGh-241" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="2M90Gd991hqFJUde-eGh-247" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="2M90Gd991hqFJUde-eGh-239" target="2M90Gd991hqFJUde-eGh-246" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -961,9 +958,6 @@
         </mxCell>
         <mxCell id="2M90Gd991hqFJUde-eGh-240" value="Cena" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="460" y="1240" width="60" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="2M90Gd991hqFJUde-eGh-241" value="Valuta" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="510" y="1264" width="60" height="25" as="geometry" />
         </mxCell>
         <mxCell id="2M90Gd991hqFJUde-eGh-246" value="ID" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" parent="1" vertex="1">
           <mxGeometry x="350" y="1240" width="60" height="35" as="geometry" />
