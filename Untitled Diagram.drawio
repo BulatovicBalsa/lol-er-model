@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-17T19:48:21.784Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="BoydsrrSuK4IDD5iV0yF" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-17T19:50:39.974Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="0uTHfHShjFscGWi4NSHN" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2377" dy="1499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -2576,10 +2576,10 @@
             <mxPoint x="671" y="353.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YKj-jM6YSjrNqbmx9cH1-30" value="password" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-30" value="lozinka" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="600" y="283.5" width="80" height="22.5" as="geometry" />
         </mxCell>
-        <mxCell id="YKj-jM6YSjrNqbmx9cH1-31" value="username" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-31" value="korisnickoIme" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="510" y="251" width="70" height="34.5" as="geometry" />
         </mxCell>
         <mxCell id="YKj-jM6YSjrNqbmx9cH1-32" value="" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;entryX=0.201;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YKj-jM6YSjrNqbmx9cH1-33" target="yfBjnqdeHr14PMCk5z5g-1">
@@ -2753,6 +2753,12 @@
         </mxCell>
         <mxCell id="YKj-jM6YSjrNqbmx9cH1-101" value="resetTime" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="1593" y="1122" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-104" value="" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="YKj-jM6YSjrNqbmx9cH1-103" target="yfBjnqdeHr14PMCk5z5g-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-103" value="nivo" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="394" y="453.5" width="80" height="22.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
