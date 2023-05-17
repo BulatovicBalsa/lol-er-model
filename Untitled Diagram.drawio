@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-17T19:46:26.343Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="N6lYrdEKDk7TFPuGeN-M" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-17T19:48:21.784Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="BoydsrrSuK4IDD5iV0yF" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2400" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2377" dy="1499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1019,6 +1019,9 @@
               <mxPoint x="-914" y="-175" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-102" style="shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.613;entryY=1.118;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=none;endFill=0;" edge="1" parent="1" source="RYUvUEmuBBPlDel3eegI-24" target="YKj-jM6YSjrNqbmx9cH1-101">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RYUvUEmuBBPlDel3eegI-24" value="skill" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1610" y="1164.25" width="100" height="39" as="geometry" />
@@ -2747,6 +2750,9 @@
         </mxCell>
         <mxCell id="YKj-jM6YSjrNqbmx9cH1-99" value="aktivan" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="241" y="136.5" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YKj-jM6YSjrNqbmx9cH1-101" value="resetTime" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1593" y="1122" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
