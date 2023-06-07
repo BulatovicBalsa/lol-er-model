@@ -16,3 +16,5 @@ DROP TABLE region_server;
 DROP TABLE server;
 DROP TABLE ip;
 DROP TABLE region;
+DROP SEQUENCE message_seq;
+DROP SEQUENCE report_seq;
