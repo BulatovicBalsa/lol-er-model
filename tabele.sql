@@ -1,17 +1,17 @@
 create table region (
-    region_id VARCHAR(4) not null,
-    region_name VARCHAR(22) not null,
+    region_id varchar(4) not null,
+    region_name varchar(22) not null,
     
     CONSTRAINT region_pk PRIMARY KEY (region_id),
     CONSTRAINT region_name_uq UNIQUE (region_name)
 );
 
 create table ip (
-    ip_address VARCHAR(45) not null,
+    ip_address varchar(45) not null,
     ip_blocked integer default 0,
     
     CONSTRAINT ip_blocked_ch CHECK (ip_blocked in (0, 1)),
-    CONSTRAINT ip_pk PRIMARY KEY (ip_address)
+    CONSTRAINT ip_pk primary key (ip_address)
 );
 
 CREATE TABLE server (
@@ -19,7 +19,7 @@ CREATE TABLE server (
     server_city VARCHAR(100) not null,
     server_country VARCHAR(100) not null,
     status VARCHAR(20) default 'Offline' not null ,
-    server_address VARCHAR(45),
+    server_address varchar(45),
     
     CONSTRAINT server_pk PRIMARY KEY (server_id),
     CONSTRAINT server_status_ch CHECK (status IN ('Online', 'Offline', 'Maintenance', 'Busy', 'Error', 'Standby', 'Decommissioned', 'Unknown')),
@@ -121,6 +121,7 @@ create table command (
     CONSTRAINT command_fk FOREIGN KEY (account_owner_username) REFERENCES account(account_username)
 );
 
+
 create table champion (
     champion_id integer not null,
     champion_difficulty integer default 2,
@@ -151,3 +152,58 @@ create table emote (
     CONSTRAINT emote_fk FOREIGN KEY (champion_owner) REFERENCES champion(champion_id)
 );
 
+create table skin (
+    champion_id integer not null,
+    skin_id integer not null,
+    skin_name VARCHAR(30) not null,
+    skin_rarity VARCHAR(10) not null,
+    skin_legacy integer default 0,
+
+    CONSTRAINT skin_pk PRIMARY KEY (champion_id, skin_id),
+    CONSTRAINT skin_rarity_ch CHECK (skin_rarity in ('common', 'epic', 'legendary', 'ultimate', 'mythic')),
+    CONSTRAINT skin_legacy_ch CHECK (skin_legacy in (0, 1)),
+    CONSTRAINT skin_id_uq UNIQUE (skin_id),
+    CONSTRAINT skin_name_uq UNIQUE (skin_name)
+);
+
+CREATE TABLE chroma (
+    champion_id integer not null,
+    skin_id integer not null,
+    chroma_id integer not null,
+    chroma_name VARCHAR(100) not null,
+
+    CONSTRAINT chroma_pk PRIMARY KEY (champion_id, skin_id, chroma_id),
+    CONSTRAINT chroma_skin_name_fk FOREIGN KEY (skin_id) REFERENCES skin(skin_id),
+    CONSTRAINT chroma_champion_fk FOREIGN KEY (champion_id) REFERENCES champion(champion_id),
+    CONSTRAINT chroma_name_uq UNIQUE (chroma_name)
+);
+
+create table owns_champion (
+    account_username VARCHAR(50) not null,
+    champion_id integer not null,
+
+    CONSTRAINT owns_champion_pk PRIMARY KEY (account_username, champion_id),
+    CONSTRAINT owns_champion_acc_fk FOREIGN key (account_username) REFERENCES account(account_username),
+    CONSTRAINT owns_champion_champion_fk FOREIGN key (champion_id) REFERENCES champion(champion_id)
+);
+
+create table owns_skin (
+    account_username VARCHAR(50) not null,
+    champion_id integer not null,
+    skin_id integer not null,
+
+    CONSTRAINT owns_skin_pk PRIMARY KEY (account_username, champion_id, skin_id),
+    CONSTRAINT owns_skin_acc_fk FOREIGN key (account_username, champion_id) REFERENCES owns_champion(account_username, champion_id),
+    CONSTRAINT owns_skin_fk FOREIGN key (skin_id) REFERENCES skin(skin_id)
+);
+
+create table owns_chroma (
+    account_username VARCHAR(50) not null,
+    champion_id integer not null,
+    skin_id integer not null,
+    chroma_id integer not null,
+
+    CONSTRAINT owns_chroma_pk PRIMARY KEY (account_username, champion_id, skin_id, chroma_id),
+    CONSTRAINT owns_chroma_acc_fk FOREIGN key (account_username, champion_id, skin_id) REFERENCES owns_skin(account_username, champion_id, skin_id),
+    CONSTRAINT owns_chroma_fk FOREIGN key (chroma_id) REFERENCES chroma(chroma_id)
+);
