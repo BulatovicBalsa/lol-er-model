@@ -68,7 +68,12 @@ create sequence report_seq
     INCREMENT by 1
     NOCACHE
     NOCYCLE;
-      
+
+create sequence journal_seq 
+    start with 1
+    INCREMENT by 1
+    NOCACHE
+    NOCYCLE;
 
 create table message (
     message_from integer not null,
@@ -215,4 +220,19 @@ create table owns_chroma (
     CONSTRAINT owns_chroma_pk PRIMARY KEY (account_id, champion_id, skin_id, chroma_id),
     CONSTRAINT owns_chroma_acc_fk FOREIGN key (account_id, champion_id, skin_id) REFERENCES owns_skin(account_id, champion_id, skin_id),
     CONSTRAINT owns_chroma_fk FOREIGN key (chroma_id) REFERENCES chroma(chroma_id)
+);
+
+create table account_journal (
+  journal_id INT,
+  operation VARCHAR2(10),
+  operation_date TIMESTAMP,
+  account_id INTEGER,
+  account_username VARCHAR2(50),
+  account_email VARCHAR2(50),
+  account_password VARCHAR2(50),
+  account_level INTEGER,
+  account_ban_until DATE,
+
+  CONSTRAINT account_journal_pk PRIMARY KEY (journal_id),
+  CONSTRAINT operation_ch CHECK (operation in ('insert', 'update', 'delete'))
 );

@@ -245,3 +245,8 @@ INSERT INTO friend (friend_1, friend_2)
 VALUES (3, 2);
 
 COMMIT;
+
+
+
+
+
