@@ -17,5 +17,5 @@ LEFT JOIN champion c ON pr.predmet_id = c.predmet_id AND pr.predmet_type = 'cham
 LEFT JOIN skin s ON pr.predmet_id = s.predmet_id AND pr.predmet_type = 'skin'
 LEFT JOIN chroma ch ON pr.predmet_id = ch.predmet_id AND pr.predmet_type = 'chroma'
 JOIN payment_method pm ON p.payment_method_id = pm.payment_method_id
-WHERE u.user_account_username = 'user1'
+WHERE u.user_account_username = 'User1'
 GROUP BY u.user_account_id, u.user_account_username, p.payment_method_id, pm.payment_method_name, pr.predmet_name, pr.predmet_type, c.champion_role, s.skin_rarity, ch.chroma_name;
