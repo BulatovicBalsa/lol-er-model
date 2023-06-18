@@ -135,6 +135,7 @@ create table user_account (
 
 create table purchase (
     purchase_id integer not null,
+    purchase_date date not null,
     payment_method_id integer not null,
     predmet_id integer not null,
     user_account_buyer integer not null,
