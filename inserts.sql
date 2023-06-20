@@ -609,3 +609,186 @@ VALUES (5, 30, 60, 'Worldbreaker Nautilus Prestige Edition - Chroma 2');
 
 commit;
 
+-- Emotes for Akali (Champion ID: 1)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (1, 1, 'Laugh', 5);
+
+-- Emotes for Ahri (Champion ID: 2)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (2, 2, 'Dance', 8);
+
+-- Emotes for Ashe (Champion ID: 3)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (3, 3, 'Taunt', 6);
+
+-- Emotes for Braum (Champion ID: 4)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (4, 4, 'Thumbs Up', 3);
+
+-- Emotes for Nautilus (Champion ID: 5)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (5, 5, 'Cry', 4);
+
+-- Emotes for Jax (Champion ID: 6)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (6, 6, 'Yawn', 7);
+
+-- Emotes for Teemo (Champion ID: 7)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (7, 7, 'Cheer', 5);
+
+-- Emotes for Lux (Champion ID: 8)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (8, 8, 'Facepalm', 6);
+
+-- Emotes for Darius (Champion ID: 9)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (9, 9, 'Flex', 5);
+
+-- Emotes for Jhin (Champion ID: 10)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (10, 10, 'Laugh', 4);
+
+-- Emotes for Zed (Champion ID: 11)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (11, 11, 'Dance', 7);
+
+-- Emotes for Lulu (Champion ID: 12)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (12, 12, 'Laugh', 5);
+
+-- Emotes for Fiora (Champion ID: 13)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (13, 13, 'Taunt', 6);
+
+-- Emotes for Caitlyn (Champion ID: 14)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (14, 14, 'Thumbs Up', 3);
+
+-- Emotes for Ahri (Champion ID: 15)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (15, 15, 'Cry', 4);
+
+-- Emotes for Talon (Champion ID: 16)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (16, 16, 'Yawn', 7);
+
+-- Emotes for Ornn (Champion ID: 17)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (17, 17, 'Cheer', 5);
+
+-- Emotes for Akali (Champion ID: 1)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (1, 18, 'Dance', 8);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (1, 19, 'Wave', 6);
+
+-- Emotes for Ahri (Champion ID: 2)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (2, 20, 'Laugh', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (2, 21, 'Cry', 4);
+
+-- Emotes for Ashe (Champion ID: 3)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (3, 22, 'Thumbs Up', 3);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (3, 23, 'Yawn', 7);
+
+-- Emotes for Braum (Champion ID: 4)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (4, 24, 'Cheer', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (4, 25, 'Facepalm', 6);
+
+-- Emotes for Nautilus (Champion ID: 5)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (5, 26, 'Flex', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (5, 27, 'Laugh', 4);
+
+-- Emotes for Jax (Champion ID: 6)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (6, 28, 'Dance', 7);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (6, 29, 'Taunt', 6);
+
+-- Emotes for Teemo (Champion ID: 7)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (7, 30, 'Thumbs Up', 3);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (7, 31, 'Cry', 4);
+
+-- Emotes for Lux (Champion ID: 8)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (8, 32, 'Laugh', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (8, 33, 'Yawn', 7);
+
+-- Emotes for Darius (Champion ID: 9)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (9, 34, 'Cheer', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (9, 35, 'Facepalm', 6);
+
+-- Emotes for Jhin (Champion ID: 10)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (10, 36, 'Flex', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (10, 37, 'Laugh', 4);
+
+-- Emotes for Zed (Champion ID: 11)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (11, 38, 'Dance', 7);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (11, 39, 'Taunt', 6);
+
+-- Emotes for Lulu (Champion ID: 12)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (12, 40, 'Thumbs Up', 3);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (12, 41, 'Cry', 4);
+
+-- Emotes for Fiora (Champion ID: 13)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (13, 42, 'Laugh', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (13, 43, 'Yawn', 7);
+
+-- Emotes for Caitlyn (Champion ID: 14)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (14, 44, 'Cheer', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (14, 45, 'Facepalm', 6);
+
+-- Emotes for Ahri (Champion ID: 15)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (15, 46, 'Flex', 5);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (15, 47, 'Laugh', 4);
+
+-- Emotes for Talon (Champion ID: 16)
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (16, 48, 'Dance', 7);
+
+INSERT INTO emote (champion_owner, emote_id, emote_name, emote_duration)
+VALUES (16, 49, 'Taunt', 6);
+
+select champion_owner, count(*) from emote group by champion_owner;
+
+commit;
