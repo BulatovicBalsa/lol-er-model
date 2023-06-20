@@ -291,7 +291,7 @@ INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_
 VALUES (14, 3, 'marksman', 'Caitlyn', 0, 1, 1, 0, 0);
 
 INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
-VALUES (15, 1, 'mage', 'Ahri', 0, 0, 0, 0, 1);
+VALUES (15, 1, 'mage', 'Ryze', 0, 0, 0, 0, 1);
 
 INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
 VALUES (16, 2, 'assassin', 'Talon', 1, 0, 0, 0, 1);
@@ -344,7 +344,7 @@ INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
 VALUES (14, 14, 'Pulsefire Caitlyn', 'epic', 0);
 
 INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
-VALUES (15, 15, 'Arcade Ahri', 'epic', 0);
+VALUES (15, 15, 'Arcana Ryze', 'epic', 0);
 
 INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
 VALUES (16, 16, 'Blood Moon Talon', 'epic', 0);
@@ -497,10 +497,10 @@ VALUES (14, 14, 28, 'Pulsefire Caitlyn - Chroma 2');
 
 -- Chromas for Arcade Ahri
 INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
-VALUES (15, 15, 29, 'Arcade Ahri - Chroma 1');
+VALUES (15, 15, 29, 'Arcana Ryze - Chroma 1');
 
 INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
-VALUES (15, 15, 30, 'Arcade Ahri - Chroma 2');
+VALUES (15, 15, 30, 'Arcana Ryze - Chroma 2');
 
 -- Chromas for Blood Moon Talon
 INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
