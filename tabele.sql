@@ -172,7 +172,7 @@ create table emote (
 create table skin (
     champion_id integer not null,
     skin_id integer not null,
-    skin_name VARCHAR(30) not null,
+    skin_name VARCHAR(70) not null,
     skin_rarity VARCHAR(10) not null,
     skin_legacy integer default 0,
 
@@ -240,3 +240,21 @@ create table account_journal (
   CONSTRAINT account_journal_pk PRIMARY KEY (journal_id),
   CONSTRAINT operation_ch CHECK (operation in ('insert', 'update', 'delete'))
 );
+
+select champion_id, count(*) as ukupno_chroma from chroma group by champion_id;
+create or replace view champion_lookup as 
+select champion_moniker, ukupno_skinova, ukupno_chroma from champion natural join (select champion_id, count(*) ukupno_skinova from skin group by champion_id)
+left inner join (select champion_id as ccid, count(*) as ukupno_chroma from chroma group by champion_id) on champion_id = ccid order by champion_moniker;
+
+select * from champion_lookup;
+select * from skin where champion_id = (select champion_id from champion where champion_moniker = 'Ashe');
+select * from skin natural join (select * from champion where champion_moniker = 'Ashe');
+
+select * from champion natural join (select champion_id, count(*) ukupno_skinova from skin group by champion_id)
+natural join (select champion_id, count(*) as ukupno_chroma from chroma group by champion_id) order by champion_moniker;
+
+select * from (select * from champion where champion_id = 15) natural join skin
+
+
+
+
