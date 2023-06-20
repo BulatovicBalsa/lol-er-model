@@ -1,3 +1,4 @@
+DROP TABLE account_journal;
 DROP TABLE owns_chroma;
 DROP TABLE owns_skin;
 DROP TABLE owns_champion;
@@ -18,3 +19,4 @@ DROP TABLE ip;
 DROP TABLE region;
 DROP SEQUENCE message_seq;
 DROP SEQUENCE report_seq;
+DROP SEQUENCE journal_seq;
