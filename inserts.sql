@@ -113,7 +113,8 @@ INSERT INTO account (account_id, account_username, account_email, account_passwo
 VALUES (20, 'user20', 'user20@example.com', 'password20', 1, NULL, 1);
 
 
-update account set account_level= FLOOR(DBMS_RANDOM.VALUE(1, 101));
+update account set account_level = FLOOR(DBMS_RANDOM.VALUE(1, 101));
+update account set region_id = FLOOR(DBMS_RANDOM.VALUE(1, 5));
 
 select * from account;
 
