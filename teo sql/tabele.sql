@@ -83,13 +83,88 @@ create table contains_item (
     CONSTRAINT containts_item_id_fk FOREIGN KEY (item_id) REFERENCES item(item_id)
 );
 
+create table champion (
+    champion_id integer not null,
+    champion_difficulty integer default 2,
+    champion_role VARCHAR(15) not null,
+    champion_moniker VARCHAR(50) not null,
+    champion_jungle integer default 0,
+    champion_top integer default 0,
+    champion_bottom integer default 0,
+    champion_support integer default 0,
+    champion_mid integer default 0,
+    
+    CONSTRAINT champion_pk PRIMARY KEY (champion_id),
+    CONSTRAINT champion_difficulty_ch CHECK (champion_difficulty in (1, 2, 3)),
+    CONSTRAINT champion_jungle_ch CHECK (champion_jungle in (0, 1)),
+    CONSTRAINT champion_bottom_ch CHECK (champion_bottom in (0, 1)),
+    CONSTRAINT champion_top_ch CHECK (champion_top in (0, 1)),
+    CONSTRAINT champion_mid_ch CHECK (champion_mid in (0, 1)),
+    CONSTRAINT champion_support_ch CHECK (champion_support in (0, 1)),
+    CONSTRAINT champion_role_ch CHECK (champion_role in ('assassin', 'mage', 'marksman', 'support', 'tank', 'fighter', 'specialist'))
+);
+
+create table emote (
+    champion_owner integer not null,
+    emote_id integer not null,
+    emote_name VARCHAR(20) not null,
+    emote_duration integer default -1,
+    
+    CONSTRAINT emote_pk PRIMARY KEY (champion_owner, emote_id),
+    CONSTRAINT emote_fk FOREIGN KEY (champion_owner) REFERENCES champion(champion_id),
+    CONSTRAINT emote_uq UNIQUE (emote_id)
+);
+
+create table skin (
+    champion_id integer not null,
+    skin_id integer not null,
+    skin_name VARCHAR(70) not null,
+    skin_rarity VARCHAR(10) not null,
+    skin_legacy integer default 0,
+
+    CONSTRAINT skin_pk PRIMARY KEY (champion_id, skin_id),
+    CONSTRAINT skin_fk FOREIGN KEY (champion_id) REFERENCES champion(champion_id),
+    CONSTRAINT skin_rarity_ch CHECK (skin_rarity in ('common', 'epic', 'legendary', 'ultimate', 'mythic')),
+    CONSTRAINT skin_legacy_ch CHECK (skin_legacy in (0, 1)),
+    CONSTRAINT skin_id_uq UNIQUE (skin_id),
+    CONSTRAINT skin_name_uq UNIQUE (skin_name)
+);
+
+CREATE TABLE chroma (
+    champion_id integer not null,
+    skin_id integer not null,
+    chroma_id integer not null,
+    chroma_name VARCHAR(100) not null,
+
+    CONSTRAINT chroma_pk PRIMARY KEY (champion_id, skin_id, chroma_id),
+    CONSTRAINT chroma_fk FOREIGN KEY (champion_id, skin_id) REFERENCES skin(champion_id, skin_id),
+    CONSTRAINT chroma_name_uq UNIQUE (chroma_name),
+    CONSTRAINT chroma_id_uq UNIQUE (chroma_id)
+);
+
+
+create table ward (
+    ward_id integer not null,
+    ward_name varchar(100) not null,
+    
+    CONSTRAINT ward_pk PRIMARY KEY (ward_id)
+);
+
 create table predmet (
     predmet_id integer not null,
-    predmet_name varchar(20) not null,
+    predmet_name varchar(100) not null,
     predmet_description varchar(50),
-    predmet_type varchar(20),
+    predmet_type varchar(20) not null,
+    predmet_champion_id integer,
+    predmet_skin_id integer,
+    predmet_chroma_id integer,
+    predmet_ward_id integer,
     
-    CONSTRAINT predmet_pk PRIMARY KEY (predmet_id)
+    CONSTRAINT predmet_pk PRIMARY KEY (predmet_id),
+    CONSTRAINT predmet_champion_id_fk FOREIGN KEY (predmet_champion_id) REFERENCES champion(champion_id),
+    CONSTRAINT predmet_skin_id_fk FOREIGN KEY (predmet_skin_id) REFERENCES skin(skin_id),
+    CONSTRAINT predmet_chroma_id_fk FOREIGN KEY (predmet_chroma_id) REFERENCES chroma(chroma_id),
+    CONSTRAINT predmet_ward_id_fk FOREIGN KEY (predmet_ward_id) REFERENCES ward(ward_id)
 );
 
 create table discount (
@@ -162,65 +237,17 @@ create table review (
     CONSTRAINT review_rating_ch CHECK (review_rating BETWEEN 0 AND 10)
 );
 
-create table champion (
-    champion_id integer not null,
-    champion_difficulty integer default 2,
-    champion_role VARCHAR(15) not null,
-    champion_moniker VARCHAR(50) not null,
-    champion_jungle integer default 0,
-    champion_top integer default 0,
-    champion_bottom integer default 0,
-    champion_support integer default 0,
-    champion_mid integer default 0,
-    predmet_id integer not null,
+CREATE TABLE item_journal (
+    journal_id integer not null,
+    operation varchar(10) NOT NULL,
+    operation_timestamp timestamp NOT NULL,
+    item_id integer,
+    item_description varchar(50),
+    item_name varchar(20),
     
-    CONSTRAINT champion_pk PRIMARY KEY (champion_id),
-    CONSTRAINT champion_predmet_id_fk FOREIGN KEY (predmet_id) REFERENCES predmet(predmet_id),
-    CONSTRAINT champion_predmet_id_un UNIQUE (predmet_id),
-    CONSTRAINT champion_difficulty_ch CHECK (champion_difficulty in (1, 2, 3)),
-    CONSTRAINT champion_jungle_ch CHECK (champion_jungle in (0, 1)),
-    CONSTRAINT champion_bottom_ch CHECK (champion_bottom in (0, 1)),
-    CONSTRAINT champion_top_ch CHECK (champion_top in (0, 1)),
-    CONSTRAINT champion_mid_ch CHECK (champion_mid in (0, 1)),
-    CONSTRAINT champion_support_ch CHECK (champion_support in (0, 1)),
-    CONSTRAINT champion_role_ch CHECK (champion_role in ('assassin', 'mage', 'marksman', 'support', 'tank', 'fighter', 'specialist'))
+    CONSTRAINT item_journal PRIMARY KEY (journal_id),
+    CONSTRAINT operation_ch CHECK (operation in ('insert', 'update', 'delete'))
 );
 
-create table skin (
-    champion_id integer not null,
-    skin_id integer not null,
-    skin_name VARCHAR(30) not null,
-    skin_rarity VARCHAR(10) not null,
-    skin_legacy integer default 0,
-    predmet_id integer not null,
 
-    CONSTRAINT skin_pk PRIMARY KEY (skin_id),
-    CONSTRAINT champion_id_fk FOREIGN KEY (champion_id) REFERENCES champion(champion_id),
-    CONSTRAINT skin_predmet_id_fk FOREIGN KEY (predmet_id) REFERENCES predmet(predmet_id),
-    CONSTRAINT skin_predmet_id_un UNIQUE (predmet_id),
-    CONSTRAINT skin_rarity_ch CHECK (skin_rarity in ('common', 'epic', 'legendary', 'ultimate', 'mythic')),
-    CONSTRAINT skin_legacy_ch CHECK (skin_legacy in (0, 1)),
-    CONSTRAINT skin_name_uq UNIQUE (skin_name)
-);
 
-CREATE TABLE chroma (
-    skin_id integer not null,
-    chroma_id integer not null,
-    chroma_name VARCHAR(100) not null,
-    predmet_id integer not null,
-
-    CONSTRAINT chroma_pk PRIMARY KEY (chroma_id),
-    CONSTRAINT chroma_skin_name_fk FOREIGN KEY (skin_id) REFERENCES skin(skin_id),
-    CONSTRAINT chroma_predmet_id_fk FOREIGN KEY (predmet_id) REFERENCES predmet(predmet_id),
-    CONSTRAINT chroma_predmet_id_un UNIQUE (predmet_id),
-    CONSTRAINT chroma_name_uq UNIQUE (chroma_name)
-);
-
-create table ward (
-    ward_id integer not null,
-    ward_name varchar(20) not null,
-    predmet_id integer not null,
-    
-    CONSTRAINT ward_pk PRIMARY KEY (ward_id),
-    CONSTRAINT ward_predmet_id_fk FOREIGN KEY (predmet_id) REFERENCES predmet(predmet_id)
-);
