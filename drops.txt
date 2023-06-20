@@ -1,3 +1,4 @@
+DROP TABLE account_journal;
 DROP TABLE owns_chroma;
 DROP TABLE owns_skin;
 DROP TABLE owns_champion;
