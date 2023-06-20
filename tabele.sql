@@ -44,8 +44,10 @@ create table account (
     account_password VARCHAR(50) not null,
     account_level integer default 1,
     account_ban_until date,
+    region_id INTEGER NOT NULL,
     
-    CONSTRAINT account_pk PRIMARY KEY (account_id)
+    CONSTRAINT account_pk PRIMARY KEY (account_id),
+    CONSTRAINT account_region_fk FOREIGN KEY(region_id) REFERENCES region(region_id)
 );
 
 create table summoner_name (
@@ -53,7 +55,7 @@ create table summoner_name (
     summoner_name_start_date date not null,
     summoner_name_name VARCHAR(50) not null,
     
-    CONSTRAINT summoner_name_pk PRIMARY KEY (account_id, summoner_name_start_date),
+    CONSTRAINT summoner_name_pk PRIMARY KEY (account_id, summoner_name_start_date, summoner_name_name),
     CONSTRAINT summoner_name_fk FOREIGN KEY (account_id) REFERENCES account(account_id)
 );
 
@@ -84,7 +86,8 @@ create table message (
     
     CONSTRAINT message_pk PRIMARY KEY (message_from, message_number),
     CONSTRAINT message_from_fk FOREIGN KEY (message_from) REFERENCES account(account_id),
-    CONSTRAINT message_to_fk FOREIGN KEY (message_from) REFERENCES account(account_id)
+    CONSTRAINT message_to_fk FOREIGN KEY (message_to) REFERENCES account(account_id),
+    CONSTRAINT message_self_send_ch CHECK (message_to != message_from)
 );
 
 create table report (
@@ -96,7 +99,8 @@ create table report (
     
     CONSTRAINT report_pk PRIMARY KEY (report_from, report_number),
     CONSTRAINT report_from_fk FOREIGN KEY (report_from) REFERENCES account(account_id),
-    CONSTRAINT report_to_fk FOREIGN KEY (report_from) REFERENCES account(account_id)
+    CONSTRAINT report_to_fk FOREIGN KEY (report_to) REFERENCES account(account_id),
+    CONSTRAINT report_self_rep_ch CHECK (report_to != report_from)
 );
 
 
@@ -173,6 +177,7 @@ create table skin (
     skin_legacy integer default 0,
 
     CONSTRAINT skin_pk PRIMARY KEY (champion_id, skin_id),
+    CONSTRAINT skin_fk FOREIGN KEY (champion_id) REFERENCES champion(champion_id),
     CONSTRAINT skin_rarity_ch CHECK (skin_rarity in ('common', 'epic', 'legendary', 'ultimate', 'mythic')),
     CONSTRAINT skin_legacy_ch CHECK (skin_legacy in (0, 1)),
     CONSTRAINT skin_id_uq UNIQUE (skin_id),
@@ -186,8 +191,7 @@ CREATE TABLE chroma (
     chroma_name VARCHAR(100) not null,
 
     CONSTRAINT chroma_pk PRIMARY KEY (champion_id, skin_id, chroma_id),
-    CONSTRAINT chroma_skin_name_fk FOREIGN KEY (skin_id) REFERENCES skin(skin_id),
-    CONSTRAINT chroma_champion_fk FOREIGN KEY (champion_id) REFERENCES champion(champion_id),
+    CONSTRAINT chroma_fk FOREIGN KEY (champion_id, skin_id) REFERENCES skin(champion_id, skin_id),
     CONSTRAINT chroma_name_uq UNIQUE (chroma_name),
     CONSTRAINT chroma_id_uq UNIQUE (chroma_id)
 );
