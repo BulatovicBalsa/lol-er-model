@@ -53,64 +53,64 @@ select * from region natural join region_server natural join server;
 commit;
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (1, 'user1', 'user1@example.com', 'password1', 1, NULL, 1;
+VALUES (1, 'user1', 'user1@example.com', 'password1', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (2, 'user2', 'user2@example.com', 'password2', 1, NULL, 1;
+VALUES (2, 'user2', 'user2@example.com', 'password2', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (3, 'user3', 'user3@example.com', 'password3', 1, NULL, 1;
+VALUES (3, 'user3', 'user3@example.com', 'password3', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (4, 'user4', 'user4@example.com', 'password4', 1, NULL, 1;
+VALUES (4, 'user4', 'user4@example.com', 'password4', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (5, 'user5', 'user5@example.com', 'password5', 1, NULL, 1;
+VALUES (5, 'user5', 'user5@example.com', 'password5', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (6, 'user6', 'user6@example.com', 'password6', 1, NULL, 1;
+VALUES (6, 'user6', 'user6@example.com', 'password6', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (7, 'user7', 'user7@example.com', 'password7', 1, NULL, 1;
+VALUES (7, 'user7', 'user7@example.com', 'password7', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (8, 'user8', 'user8@example.com', 'password8', 1, NULL, 1;
+VALUES (8, 'user8', 'user8@example.com', 'password8', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (9, 'user9', 'user9@example.com', 'password9', 1, NULL, 1;
+VALUES (9, 'user9', 'user9@example.com', 'password9', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (10, 'user10', 'user10@example.com', 'password10', 1, NULL, 1;
+VALUES (10, 'user10', 'user10@example.com', 'password10', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (11, 'user11', 'user11@example.com', 'password11', 1, NULL, 1;
+VALUES (11, 'user11', 'user11@example.com', 'password11', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (12, 'user12', 'user12@example.com', 'password12', 1, NULL, 1;
+VALUES (12, 'user12', 'user12@example.com', 'password12', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (13, 'user13', 'user13@example.com', 'password13', 1, NULL, 1;
+VALUES (13, 'user13', 'user13@example.com', 'password13', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (14, 'user14', 'user14@example.com', 'password14', 1, NULL, 1;
+VALUES (14, 'user14', 'user14@example.com', 'password14', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (15, 'user15', 'user15@example.com', 'password15', 1, NULL, 1;
+VALUES (15, 'user15', 'user15@example.com', 'password15', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (16, 'user16', 'user16@example.com', 'password16', 1, NULL, 1;
+VALUES (16, 'user16', 'user16@example.com', 'password16', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (17, 'user17', 'user17@example.com', 'password17', 1, NULL, 1;
+VALUES (17, 'user17', 'user17@example.com', 'password17', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (18, 'user18', 'user18@example.com', 'password18', 1, NULL, 1;
+VALUES (18, 'user18', 'user18@example.com', 'password18', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (19, 'user19', 'user19@example.com', 'password19', 1, NULL, 1;
+VALUES (19, 'user19', 'user19@example.com', 'password19', 1, NULL, 1);
 
 INSERT INTO account (account_id, account_username, account_email, account_password, account_level, account_ban_until, region_id)
-VALUES (20, 'user20', 'user20@example.com', 'password20', 1, NULL, 1;
+VALUES (20, 'user20', 'user20@example.com', 'password20', 1, NULL, 1);
 
 
 update account set account_level= FLOOR(DBMS_RANDOM.VALUE(1, 101));
