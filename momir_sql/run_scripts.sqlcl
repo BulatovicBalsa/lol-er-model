@@ -1,0 +1,12 @@
+LOL
+LOL
+@drop_all.sql
+@tables_igra.ddl
+@skup_opreme_journal.sql
+@create_complex_view.sql
+@inserts.sql
+@item_set_inserts.sql
+@procedura.sql
+@brisanje.sql
+@relevantni_selektovi.sql
+exit
