@@ -248,6 +248,364 @@ VALUES (3, 2);
 
 COMMIT;
 
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (1, 2, 'assassin', 'Akali', 0, 1, 0, 0, 1);
 
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (2, 3, 'mage', 'Ahri', 0, 0, 1, 0, 1);
 
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (3, 1, 'marksman', 'Ashe', 0, 1, 1, 0, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (4, 2, 'support', 'Braum', 0, 1, 0, 1, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (5, 2, 'tank', 'Nautilus', 1, 1, 0, 0, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (6, 3, 'fighter', 'Jax', 1, 1, 0, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (7, 2, 'specialist', 'Teemo', 1, 0, 0, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (8, 3, 'mage', 'Lux', 0, 0, 1, 1, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (9, 2, 'fighter', 'Darius', 1, 1, 0, 0, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (10, 1, 'marksman', 'Jhin', 0, 0, 1, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (11, 2, 'assassin', 'Zed', 1, 0, 0, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (12, 3, 'support', 'Lulu', 0, 0, 0, 1, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (13, 2, 'fighter', 'Fiora', 1, 1, 0, 0, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (14, 3, 'marksman', 'Caitlyn', 0, 1, 1, 0, 0);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (15, 1, 'mage', 'Ahri', 0, 0, 0, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (16, 2, 'assassin', 'Talon', 1, 0, 0, 0, 1);
+
+INSERT INTO champion (champion_id, champion_difficulty, champion_role, champion_moniker, champion_jungle, champion_top, champion_bottom, champion_support, champion_mid)
+VALUES (17, 3, 'tank', 'Ornn', 0, 1, 0, 0, 0);
+
+commit;
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (1, 1, 'Silverfang Akali', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (2, 2, 'Popstar Ahri', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (3, 3, 'Sherwood Forest Ashe', 'common', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (4, 4, 'Dragonslayer Braum', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (5, 5, 'AstroNautilus', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (6, 6, 'Mecha Kingdoms Jax', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (7, 7, 'Omega Squad Teemo', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (8, 8, 'Elementalist Lux', 'ultimate', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (9, 9, 'Dunkmaster Darius', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (10, 10, 'High Noon Jhin', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (11, 11, 'Championship Zed', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (12, 12, 'Pool Party Lulu', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (13, 13, 'Heartpiercer Fiora', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (14, 14, 'Pulsefire Caitlyn', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (15, 15, 'Arcade Ahri', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (16, 16, 'Blood Moon Talon', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (17, 17, 'Thunder Lord Ornn', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (1, 18, 'KDA Akali', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (2, 19, 'Star Guardian Ahri', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (3, 20, 'PROJECT: Ashe', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (4, 21, 'El Tigre Braum', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (5, 22, 'Worldbreaker Nautilus', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (6, 23, 'Nemesis Jax', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (7, 24, 'Little Devil Teemo', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (1, 25, 'True Damage Akali', 'ultimate', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (1, 26, 'PROJECT: Akali', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (2, 27, 'Arcana Ahri', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (3, 28, 'High Noon Ashe', 'legendary', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (4, 29, 'Arctic Ops Braum', 'epic', 0);
+
+INSERT INTO skin (champion_id, skin_id, skin_name, skin_rarity, skin_legacy)
+VALUES (5, 30, 'Worldbreaker Nautilus Prestige Edition', 'mythic', 0);
+
+select * from skin;
+
+commit;
+
+select * from chroma;
+
+-- Chromas for Silverfang Akali
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 1, 1, 'Silverfang Akali - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 1, 2, 'Silverfang Akali - Chroma 2');
+
+-- Chromas for Popstar Ahri
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 2, 3, 'Popstar Ahri - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 2, 4, 'Popstar Ahri - Chroma 2');
+
+-- Chromas for Sherwood Forest Ashe
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 3, 5, 'Sherwood Forest Ashe - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 3, 6, 'Sherwood Forest Ashe - Chroma 2');
+
+-- Chromas for Dragonslayer Braum
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 4, 7, 'Dragonslayer Braum - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 4, 8, 'Dragonslayer Braum - Chroma 2');
+
+-- Chromas for AstroNautilus
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 5, 9, 'AstroNautilus - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 5, 10, 'AstroNautilus - Chroma 2');
+
+-- Chromas for Mecha Kingdoms Jax
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (6, 6, 11, 'Mecha Kingdoms Jax - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (6, 6, 12, 'Mecha Kingdoms Jax - Chroma 2');
+
+-- Chromas for Omega Squad Teemo
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (7, 7, 13, 'Omega Squad Teemo - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (7, 7, 14, 'Omega Squad Teemo - Chroma 2');
+
+-- Chromas for Elementalist Lux
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (8, 8, 15, 'Elementalist Lux - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (8, 8, 16, 'Elementalist Lux - Chroma 2');
+
+-- Chromas for Dunkmaster Darius
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (9, 9, 17, 'Dunkmaster Darius - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (9, 9, 18, 'Dunkmaster Darius - Chroma 2');
+
+-- Chromas for High Noon Jhin
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (10, 10, 19, 'High Noon Jhin - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (10, 10, 20, 'High Noon Jhin - Chroma 2');
+
+-- Chromas for Championship Zed
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (11, 11, 21, 'Championship Zed - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (11, 11, 22, 'Championship Zed - Chroma 2');
+
+-- Chromas for Pool Party Lulu
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (12, 12, 23, 'Pool Party Lulu - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (12, 12, 24, 'Pool Party Lulu - Chroma 2');
+
+-- Chromas for Heartpiercer Fiora
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (13, 13, 25, 'Heartpiercer Fiora - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (13, 13, 26, 'Heartpiercer Fiora - Chroma 2');
+
+-- Chromas for Pulsefire Caitlyn
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (14, 14, 27, 'Pulsefire Caitlyn - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (14, 14, 28, 'Pulsefire Caitlyn - Chroma 2');
+
+-- Chromas for Arcade Ahri
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (15, 15, 29, 'Arcade Ahri - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (15, 15, 30, 'Arcade Ahri - Chroma 2');
+
+-- Chromas for Blood Moon Talon
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (16, 16, 31, 'Blood Moon Talon - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (16, 16, 32, 'Blood Moon Talon - Chroma 2');
+
+-- Chromas for Thunder Lord Ornn
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (17, 17, 33, 'Thunder Lord Ornn - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (17, 17, 34, 'Thunder Lord Ornn - Chroma 2');
+
+-- Chromas for KDA Akali
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 18, 35, 'KDA Akali - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 18, 36, 'KDA Akali - Chroma 2');
+
+-- Chromas for Star Guardian Ahri
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 19, 37, 'Star Guardian Ahri - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 19, 38, 'Star Guardian Ahri - Chroma 2');
+
+-- Chromas for PROJECT: Ashe
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 20, 39, 'PROJECT: Ashe - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 20, 40, 'PROJECT: Ashe - Chroma 2');
+
+-- Chromas for El Tigre Braum
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 21, 41, 'El Tigre Braum - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 21, 42, 'El Tigre Braum - Chroma 2');
+
+-- Chromas for Worldbreaker Nautilus
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 22, 43, 'Worldbreaker Nautilus - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 22, 44, 'Worldbreaker Nautilus - Chroma 2');
+
+-- Chromas for Nemesis Jax
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (6, 23, 45, 'Nemesis Jax - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (6, 23, 46, 'Nemesis Jax - Chroma 2');
+
+-- Chromas for Little Devil Teemo
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (7, 24, 47, 'Little Devil Teemo - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (7, 24, 48, 'Little Devil Teemo - Chroma 2');
+
+-- Chromas for True Damage Akali
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 25, 49, 'True Damage Akali - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 25, 50, 'True Damage Akali - Chroma 2');
+
+-- Chromas for K/DA ALL OUT Ahri
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 26, 51, 'PROJECT: Akali - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (1, 26, 52, 'PROJECT: Akali - Chroma 2');
+
+-- Chromas for High Noon Ashe
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 27, 53, 'Arcana Ahri - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (2, 27, 54, 'Arcana Ahri - Chroma 2');
+
+-- Chromas for Arcanist Braum
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 28, 55, 'High Noon Ashe - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (3, 28, 56, 'High Noon Ashe - Chroma 2');
+
+-- Chromas for Conqueror Nautilus
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 29, 57, 'Arctic Ops Braum - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (4, 29, 58, 'Arctic Ops Braum - Chroma 2');
+
+-- Chromas for God-King Darius
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 30, 59, 'Worldbreaker Nautilus Prestige Edition - Chroma 1');
+
+INSERT INTO chroma (champion_id, skin_id, chroma_id, chroma_name)
+VALUES (5, 30, 60, 'Worldbreaker Nautilus Prestige Edition - Chroma 2');
+
+commit;
 
