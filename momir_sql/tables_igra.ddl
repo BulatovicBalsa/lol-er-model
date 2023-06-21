@@ -126,10 +126,8 @@ CREATE TABLE game (
     tim_id_tima     INTEGER NOT NULL
 );
 
-CREATE UNIQUE INDEX game__idx ON
-    game (
-        tim_id_tima
-    ASC );
+ALTER TABLE game ADD CONSTRAINT tim_id_tima_un UNIQUE ( tim_id_tima );
+
 
 ALTER TABLE game ADD CONSTRAINT game_pk PRIMARY KEY ( id_game );
 
